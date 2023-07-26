@@ -38,7 +38,7 @@
     
     <header class="max-w-screen-lg mx-auto">
         <!-- navigation section starts here -->
-        <div class="navbar bg-[#F85559] my-12 text-white">
+        <nav class="navbar bg-[#F85559] my-12 px-10 py-5 text-white rounded-full">
           <div class="navbar-start">
             <div class="dropdown">
               <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -52,7 +52,7 @@
               </ul>
             </div>
             <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
+              <ul class="menu menu-horizontal px-1 font-medium">
                   <li><a>Home</a></li>
                   <li><a>About Us</a></li>
                   <li><a>Shop</a></li>
@@ -63,21 +63,84 @@
           
           <div>
             <img src="./images/logo.png" alt="">
-            <a class="btn btn-ghost normal-case text-xl">Fruit Burst</a>
+            <a class="btn btn-ghost normal-case font-bold text-4xl">Fruit Burst</a>
           </div>
 
           <div class="navbar-end">
             <div class="form-control">
-              <div class="lg:input-group md:input-group">
-                <input type="text" placeholder="Search here" class="input input-bordered" />
-                <button class="btn btn-circle">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+              <div class="input-group">
+                <div>
+                  <input type="text" placeholder="Search here" class="input-group-lg px-5 rounded-full"/>
+                </div>
+                <button class="">
+                  <i class="fa-solid fa-magnifying-glass fa-xl -ml-14" style="color: #121212;"></i>
                 </button>
               </div>
             </div>
           </div>
-        </div>
+        </nav>
         <!-- navigation section ends here -->
+
+        <!-- Slider section starts here -->
+        <section class="slider my-12">
+          <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="./images/banner1.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="./images/banner2.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="./images/banner3.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full">
+              <img src="./images/banner4.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="slider-bottom max-w-screen-md mx-auto rounded-md shadow-2xl bg-slate-500 -mt-24">
+          <div class="slider-bottom-container px-5 flex">
+            <div class="grape">
+              <img src="./images/fruit1.png" alt="">
+              <p>Grape</p>
+            </div>
+            <div class="orange">
+              <img src="./images/fruit2.png" alt="">
+              <p>Orange</p>
+            </div>
+            <div class="mango">
+              <img src="./images/fruit3.png" alt="">
+              <p>Mango</p>
+            </div>
+            <div class="strawberry">
+              <img src="./images/fruit4.png" alt="">
+              <p>Strawberry</p>
+            </div>
+            <div class="Pomegranate">
+              <img src="./images/fruit5.png" alt="">
+              <p>Pomegranate</p>
+            </div>
+
+          </div>
+        </section>
+        <!-- Slider section ends here -->
 
     </header>
     
