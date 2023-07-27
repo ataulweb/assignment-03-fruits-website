@@ -38,7 +38,7 @@
     
     <header class="max-w-screen-lg mx-auto">
         <!-- navigation section starts here -->
-        <nav class="navbar bg-[#F85559] my-12 px-10 py-5 text-white rounded-full">
+        <nav class="navbar lg:bg-[#F85559] my-12 px-10 py-5 text-white lg:rounded-full">
           <div class="navbar-start">
             <div class="dropdown">
               <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -118,7 +118,7 @@
 
         <!-- Slider bottom section starts here -->
         <section class="slider-bottom max-w-screen-md rounded-md shadow-2xl bg-white absolute -bottom-14 left-72">
-          <div class="slider-bottom-container flex gap-10 justify-center items-center py-10 text-center">
+          <div class="slider-bottom-container hidden lg:flex gap-10 justify-center items-center py-10 text-center">
             <div class="grape text-center">
               <img src="./images/fruit1.png" alt="">
               <p>Grape</p>
@@ -148,7 +148,7 @@
     <main class="max-w-screen-lg mx-auto">
       <!-- Deal of the day section starts here -->
       <section class="deal-of-the-day mt-36">
-        <div class="deal-container flex gap-44 flex-1">
+        <div class="deal-container lg:flex flex-row gap-44 lg:flex-1">
           <div class="deal-content">
             <h1 class="text-[#121212] text-5xl font-extrabold">Deal of the day</h1>
             <p class="font-medium mt-5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
@@ -187,7 +187,7 @@
       </section>
 
       <section class="deal-day-section">
-        <div class="card-container flex gap-5 my-12">
+        <div class="card-container lg:flex lg:flex-row flex-col gap-5 my-12">
           <!-- card No-01 -->
           <div class="card w-60 glass shadow-2xl">
             <figure><img src="./images/fruit6.png" alt="car!"/></figure>
@@ -202,8 +202,32 @@
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
               </div>
+              <!-- Modal section-01 -->
               <div class="card-actions">
-                <a href="">Details</a>
+                <div class="card-actions">
+    <!-- Open the modal using ID.showModal() method -->
+              <button onclick="my_modal_5.showModal()">Details</button>
+            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+              <form method="dialog" class="modal-box">
+                <figure><img src="./images/fruit6.png" alt="car!"/></figure>
+                <h2 class="card-title">Apple Fruits</h2>
+              <p>apple, Fruit of the genus Malus, in the rose family, the most widely cultivated tree fruit. Malus species are native to the temperate zones of both hemispheres.</p>
+              <!-- rating section -->
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+                <div class="modal-action">
+                <!-- if there is a button in form, it will close the modal -->
+                  <button class="btn">Close</button>
+                  <button class="btn bg-[#F85559] text-white">Buy Now</button>
+                </div>
+              </form>
+            </dialog>
+                </div>
               </div>
             </div>
           </div>
@@ -281,7 +305,7 @@
             <h2 class="card-title mx-auto text-5xl font-extrabold text-white">Meet the team section</h2>
             <p class="font-medium text-base pb-10 text-white">Contrary to popular belief, is not simply random text. It has roots in a piece of classical 
             <br> Latin literature from 45 BC, making it over 2000 years old.</p>
-            <div class="card-actions mx-auto">
+            <div class="card-actions lg:mx-auto flex-col lg:flex-row mx-auto">
               <div class="member-1 mr-16 text-white">
                 <img src="./images/member1.png" alt="">
                 <h3 class="font-bold text-xl pt-8">Ataul Hossain</h3>
@@ -338,9 +362,9 @@
         <p class="text-base font-medium py-5 text-center text-[#12121299]">Contrary to popular belief, is not simply random text. It has roots in a piece of classical
         <br> Latin literature from 45 BC, making it over 2000 years old.</p>
 
-        <div class="choose-container flex gap-10 mt-11">
+        <div class="choose-container flex flex-col md:flex-row gap-10 mt-11">
           <!-- Choose start box -->
-          <div class="choose-start-box">
+          <div class="choose-start-box order-2 md:order-1 lg:order-1">
             <!-- Dedicated Team -->
           <div class="choose-start-content flex justify-center items-center gap-6">
             <i class="fa-solid fa-user-group fa-2xl mb-10" style="color: #8c8c8c;"></i>
@@ -355,7 +379,7 @@
           <div class="choose-start-content flex justify-center items-center gap-6 mt-4">
             <i class="fa-solid fa-heart fa-2xl mb-10" style="color: #8c8c8c;"></i>
             <div class="dedicated-team">
-              <h4 class="text-2xl font-extrabold">Dedicated Team</h4>
+              <h4 class="text-2xl font-extrabold">Fresh is Best</h4>
               <hr> <hr class="p-2">
               <p class="text-sm font-medium text-[#12121299]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
             </div>
@@ -365,18 +389,18 @@
           <div class="choose-start-content flex justify-center items-center gap-6 mt-4">
             <i class="fa-solid fa-gift fa-2xl mb-10" style="color: #8c8c8c;"></i>
             <div class="dedicated-team">
-              <h4 class="text-2xl font-extrabold">Dedicated Team</h4>
+              <h4 class="text-2xl font-extrabold">Gift Certificates</h4>
               <hr> <hr class="p-2">
               <p class="text-sm font-medium text-[#12121299]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
             </div>
           </div>
           </div>
 
-          <div class="choose-img-content">
+          <div class="choose-img-content order-1 md:order-2 lg:order-2">
             <img src="./images/whychoose1.png" alt="" class="h-full">
           </div>
 
-          <div class="choose-end-content">
+          <div class="choose-end-content order-3 md:order-3 lg:order-3">
             <div class="choose-end-box">
               <!-- Integrated Supplier -->
             <div class="choose-end-content flex justify-center items-center gap-6">
